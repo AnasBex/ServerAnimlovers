@@ -5,8 +5,6 @@ const router = require('./routes/index')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const fileUpload = require('express-fileupload')
-const anime = require("./routers/anime")
-const manga = require("./routers/manga")
 
 app.use(cors())
 
@@ -14,8 +12,6 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(fileUpload({createParentPath:true}))
 
-app.use("/anime", anime)
-app.use("/manga", manga)
 app.use('/api',router)
 app.use('/',(req,res)=>{
     res.send({
