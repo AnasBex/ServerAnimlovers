@@ -308,7 +308,7 @@ exports.search = (req, res) => {
           id: $(this).find("h2 > a").attr("href").replace(`${baseUrl}anime/`, ""),
           status: $(this).find(".set").eq(1).text().replace("Status : ", ""),
           score: parseFloat(
-            $(this).find(".set").eq(2).text().replace("Rating : ", "")
+            $(this).find(".set").eq(2).text().replace("Rating : ", "0")
           ),
           genre_list,
         };
