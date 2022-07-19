@@ -171,6 +171,9 @@ exports.onGoingAnimeList = (req, res) => {
             uploaded_on,
             day_updated,
             link,
+            quality,
+            size,
+            download_link,
           });
         });
       res.status(200).json({

@@ -342,4 +342,3 @@ function _notFoundQualityHandler(res,num){
   return response;
 
 }
-
