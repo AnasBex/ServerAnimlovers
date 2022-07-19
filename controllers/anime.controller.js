@@ -41,7 +41,7 @@ exports.detailAnime = async (req, res) => {
         .text()
         .replace("Japanese: ", "");
       object.score = parseFloat(
-        $(this).find("p").children().eq(2).text().replace("Skor: ", "")
+        $(this).find("p").children().eq(2).text().replace("Skor: ", "0")
       );
       object.producer = $(this)
         .find("p")
