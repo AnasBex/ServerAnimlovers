@@ -65,7 +65,7 @@ exports.home = (req, res) => {
             });
           uploaded_on = $(this).find(".newnime").text();
           episode = $(this).find(".epz").text().replace(" ", "");
-          score = parseFloat($(this).find(".epztipe").text().replace(" ", ""));
+          score = parseFloat($(this).find(".epztipe").text().replace(" ", "0"));
           complete.push({
             title,
             id,
@@ -114,7 +114,7 @@ exports.completeAnimeList = (req, res) => {
             });
           uploaded_on = $(this).find(".newnime").text();
           episode = $(this).find(".epz").text().replace(" ", "");
-          score = parseFloat($(this).find(".epztipe").text().replace(" ", ""));
+          score = parseFloat($(this).find(".epztipe").text().replace(" ", "0"));
           animeList.push({
             title,
             id,

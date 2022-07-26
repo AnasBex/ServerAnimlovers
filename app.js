@@ -16,7 +16,7 @@ app.use('/api',router);
 app.use('/',(req,res)=>{
     res.send({
         message : 'Welcome To Unofficial Animlovers V3 Rest Api Key',
-        createdBy : 'Anas Bex'
+        createdBy : '🥃Anas Bex'
     })
 })
 app.use('/api',(req,res) =>{
