@@ -255,7 +255,7 @@ exports.animeByGenre = (req, res) => {
           .replace("https://otakudesu.tv/anime/", "");
         object.studio = $(this).find(".col-anime-studio").text();
         object.episode = $(this).find(".col-anime-eps").text();
-        object.score = parseFloat($(this).find(".col-anime-rating").text());
+        object.score = parseFloat($(this).find(".col-anime-rating").text().replace("" , "0"));
         object.release_date = $(this).find(".col-anime-date").text();
         genreList = [];
         $(this)
